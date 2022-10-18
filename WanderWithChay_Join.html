@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WanderWithChay</title>
+        <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="JS/formValidation.js"></script>        
+    </head>
+    <body>
+        <link rel="stylesheet" href="CSS/WanderWithChay_Join.css">
+        <div class="myDiv">
+            <a href="WanderWithChay_Home.html" >Home</a>
+            <a href="WanderWithChay_About.html">About</a>
+            <a href="WandedrWithChay_Destinations.html">Destinations</a>
+            <a href="WanderWithChay_UpcomingTrips.html">UpcomingTrips</a>
+            <a href="WanderWithChay_Join.html">Join</a>
+        </div>
+        <div class="backgroundimage">
+            <div class="backgroundtext">
+                <h1 style="color:White"><b>Join</b></h1>
+            </div>
+        </div>
+        <img src="Images/Background_Join.jpg" title="Background" alt="Background" width="1500" height="750">
+        <br>
+        <hr>
+        <p id="JoinText">Let us join our hands altogether and start exploring the new worlds, new places, new adventures and let not regret in future after the rush in our blood got weaken.</p>
+        <hr>
+        <div id="error"></div>
+      <!-- <form action="https://www.randyconnolly.com/tests/process.php ">
+
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" class="form-control" id="contact-name" name="name"       placeholder="Enter your name.." onkeyup='validateName()'>
+              <span class='error-message' id='name-error'></span>
+          </div>
+      
+          <div class="form-group">
+              <label for="contact-phone">Phone Number</label>
+              <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Ex: 1231231234" onkeyup='validatePhone()'>
+              <span class='error-message' id='phone-error'></span>
+          </div>
+      
+          <div class="form-group">
+              <label for="contact-email">Email address</label>
+              <input type="email" class="form-control" id="contact-email" name="email" placeholder="Enter Email" onkeyup='validateEmail()'>
+              <span class='error-message' id='email-error'></span>
+          </div>   
+      
+          <div class="form-group">
+              <label for='contactMessage'>Any preferred locations to visit?</label>
+              <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Your preferences  b" onkeyup='validateMessage()'></textarea>
+              <span class='error-message' id='message-error'></span>
+          </div>
+      
+          <button onclick='return validateForm()' class="btn btn-default">Submit</button>
+          <span class='error-message' id='submit-error'></span>
+      </form> -->
+
+      <form
+            name="form"
+            action="https://www.randyconnolly.com/tests/process.php"
+            onsubmit="return validateForm()"
+            novalidate
+            method="post"
+          >
+            <div class="iform">
+              <label for="name">Your name*</label> <br>
+              <input type="text" name="name" id="name"  placeholder="Enter your name">
+              <div class="error" id="nameError"></div>
+            </div>
+            <br>
+            <div class="iform">
+              <label for="email">Your e-mail address*</label> <br>
+              <input type="email" name="email" id="email" placeholder="Enter your email" >
+              <div class="error" id="emailError"></div>
+            </div>
+            <br>
+            <div class="iform">
+              <label for="phone">Your phone number</label> <br>
+              <!-- Added pattern attribute to validate the phone number -->
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                maxlength="10"
+              >
+              <div class="error" id="phoneError"></div>
+            </div>
+            <br>
+            <div class="iform">
+              <label for="inquiry">Interested to Join?*</label> <br>
+              <select name="inquiry" id="inquiry">
+                <option>Select</option>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+              <div class="error" id="inquiryError"></div>
+            </div>
+            <br>
+            <div class="iform">
+              <label for="subject">Subject*</label> <br>
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Enter your subject"
+              >
+              <div class="error" id="subjectError"></div>
+            </div>
+            <br>
+            <div class="iform">
+              <label for="textarea">Suggestions or Ideas*</label>
+              <br>
+              <textarea id="textarea" name="textarea" placeholder="Enter your enquiry">
+              </textarea>
+              <div class="error" id="textareaError"></div>
+            </div>
+            <br>
+
+            <button>Submit</button>
+          </form>
+        <hr>
+        <footer>
+            <p style="color:White" class="center">Contact</p>
+            <a class="center" href="https://www.google.com/url?q=https%3A%2F%2Fwww.facebook.com%2FChaitanya.Sai.Natra%2F&sa=D&sntz=1&usg=AOvVaw2wp8YD2ECf2vZm7j6aGDtb">facebook</a>
+            <a class="center" href="https://www.google.com/url?q=https%3A%2F%2Fwww.instagram.com%2Fchaitanya_sai_natra%2F&sa=D&sntz=1&usg=AOvVaw1RTImsvG-Dq9367JstUHWz">instagram</a>
+            <a class="center" href="https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fchaitanya-sai-natra-6b73b1115%2F&sa=D&sntz=1&usg=AOvVaw3ldbPhlt9zdT1R7YkAoqua">linkedin</a>
+        </footer>   
+    </body>
+</html>

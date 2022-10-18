@@ -1,0 +1,10 @@
+#about
+{
+    text-align: center;
+    width: 75%;
+    height: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: auto;
+    font-family: "Comic Sans", "Arial";
+}

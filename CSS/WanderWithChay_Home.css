@@ -1,0 +1,24 @@
+div,body
+    {
+        background-color: black;
+    }
+#intro /* id from introduction paragraph. */
+    {
+        background-color: white;
+        width: 700px;
+        height: 65px;
+        background-color: grey;
+        overflow: visible;
+    }
+a
+    {
+        color: white;
+    }
+.center /*Class from footer*/
+    {
+        text-align: center;
+        }
+button:hover/* Button highlighting when cursor is on it */
+{
+    background-color: yellow;
+}
